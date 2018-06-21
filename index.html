@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Eventbrite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/base_styles.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/home.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/global_header.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/link.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/tag.css" />
+
+
+
+</head>
+<header>
+    <div class="js-create-banner-experiment"></div>
+    <div id="global-header" class="global-header-container logged-out consumer-header">
+        <div class="global-header js-global-header">
+            <div class="major">
+                <a class="eb-logo js-d-track-link" href="index.html">
+                    <i class="ico-eventbrite-wordmark ico--color-brand-orange ico--large"></i>
+                    <span class="is-hidden-accessible">Eventbrite</span>
+                </a>
+                <div class="gh-dd header-search">
+                    <form action="/d/" method="GET" class="responsive-form is-hidden" id="search-autocomplete">
+                        <div class="search-autocomplete js-header-search-autocomplete is-init">
+                            <a href="#" class="hide-large js-header-search-icon mobile-action-b " title="Search">
+                                <i class="ico-search-v2 header-search-icon"></i>
+                                <span class="is-hidden-accessible">Search menu</span>
+                            </a>
+
+                            <div class="search-autocomplete__query-input js-search-query-area show-large">
+                                <div class="responsive-form__input--icon js-d-clearable-input" dorsal-guid="230a12ea-ce50-9e45-5a71-72bac2eb64e0" data-xd-wired="clearable-input">
+                                    <label for="q" class="is-hidden-accessible">Search for events</label>
+                                    <div class="responsive-form__input--icon__container show-large">
+                                        <i class="ico-search-v2 js-search-query-icon"></i>
+                                    </div>
+                                    <input type="search" class="js-search-query-input ui-autocomplete-input" data-automation="search-input" id="q" name="q" placeholder="Search for events" data-role="none" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+                                    <button class="directory-search js-directory-search btn btn--brite is-hidden">
+                                        <i class="ico-search-v2"></i>
+                                    </button>
+                                    <div class="responsive-form__input--icon__container close-button hide-large is-hidden">
+                                        <a href="#" class="js-clear-input">
+                                            <i class="ico-cross"></i><span class="is-hidden-accessible">x</span>
+                                        </a>
+                                    </div></div>
+                            </div>
+                            <ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox"  style="z-index: 3; display: none;"></ul></div>
+                        <input type="hidden" name="mode" value="search">
+                    </form>
+                </div>
+            </div>
+            <div class="minor" role="navigation">
+                <div class="gh-dd global-header__browse-events show-large text--truncated  js-gh-browse-events">
+                    <a href="browesevent.html" class="js-gh-dd-link header-link gh-discover js-d-track-link js-xd-janus-checkpoint-link" data-checkpoint-name="discover_header_link_clicked" data-event-action="Discover" data-event-category="header" data-event-label="home" dorsal-guid="afdf6289-c43a-be67-effa-f368b3bd2858" data-xd-wired="track-link">
+                        Browse Events
+                    </a>
+                </div>
+
+
+                <div class="gh-dd gh-profile-box js-gh-dd">
+                    <a class="user-avatar header-link js-gh-action hide-large" onclick="if (!window['_EB_GLOBAL_HEADER_INITED']) { document.getElementById('js-global-nav-account-menu').className += ' js-gh-dd-menu--show'; return false; }" href="https://www.eventbrite.com/account/" data-automation="global-nav-user-avatar" aria-controls="js-global-nav-account-menu" aria-haspopup="true" aria-expanded="false">
+                        <i class="ico-menu-v2 user-avatar-icon "></i>
+                        <span class="is-hidden-accessible">Menu</span>
+                    </a>
+                    <div class="gh-dd-menu on-right js-gh-dd-menu" id="js-global-nav-account-menu" aria-hidden="true" aria-expanded="false" role="group" data-automation="global-nav-account-dropdown">
+                        <ul class="list">
+                            <li class="list--with-divider-bottom">
+                                <a href="browesevent.html" class="js-gh-dd-link header-link gh-discover js-d-track-link js-xd-janus-checkpoint-link" data-checkpoint-name="discover_header_link_clicked" data-event-action="Discover" data-event-category="header" data-event-label="home" dorsal-guid="afdf6289-c43a-be67-effa-f368b3bd2858" data-xd-wired="track-link">
+                                    Browse Events
+                                </a>
+                            </li>
+                            <li><a class="js-d-track-link js-update-referrer-url" data-event-action="SigninAttempt" data-event-category="header" data-event-label="home" href="https://www.eventbrite.com/signup/?user_type=prebuyer&amp;user_type_sig=AH_ElWFDh7ydCzLWwm23lmNuk2bpPqcyKw&amp;referrer=/" dorsal-guid="0517255b-f7e8-bccd-1767-6aa7b7dd9c9c" data-xd-wired="track-link">Sign in</a></li>
+
+                            <li class="list--btn hide-large">
+
+                                <a class="btn btn--block js-d-track-link js-xd-janus-checkpoint-event" data-event-action="CreateAttempt" data-event-category="header" data-event-label="home" href="createevent.html" data-checkpoint-name="hiw_global_header_cta_clicked" data-automation="" dorsal-guid="f7f5f09f-9978-5e45-527c-3228e1efa5de" data-xd-wired="track-link">Create Event</a>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+                <a data-automation="global-header-login-url" href="signin.html" class="header-link primary-link js-d-track-link show-large js-update-referrer-url" data-event-action="SigninAttempt" data-event-category="header" data-event-label="home" dorsal-guid="e4881b1b-93fd-0213-ffd0-3b5520d361ca" data-xd-wired="track-link">Sign in</a>
+
+                <div class="hide-small hide-medium gh-dd js-gh-dd">
+
+                    <a class="btn header-link btn--link js-gh-dd-link js-d-track-link js-xd-janus-checkpoint-event" data-event-action="CreateAttempt" data-event-category="header" data-event-label="home" href="createevent.html" data-checkpoint-name="hiw_global_header_cta_clicked" data-automation="global-nav-create" dorsal-guid="4844377d-50a4-4927-fb6d-6081f2e5fa07" data-xd-wired="track-link">Create Event</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<div id="content" class="clrfix">
+
+
+    <section class="hero-image-container hide-small">
+        <div class="js-d-carousel hero-carousel slick-initialized slick-slider" data-d-carousel-options="{
+            &quot;autoplay&quot;: true,
+            &quot;fade&quot;: true,
+            &quot;cssEase&quot;: &quot;ease-in&quot;,
+            &quot;speed&quot;:650,
+            &quot;autoplaySpeed&quot;:3000,
+            &quot;lazyLoad&quot;: &quot;ondemand&quot;,
+            &quot;arrows&quot;: false,
+            &quot;slidesToShow&quot;: 1,
+            &quot;slidesToScroll&quot;: 1,
+            &quot;accessibility&quot;: false
+        }" dorsal-guid="d5cc8624-f815-ea86-cd92-7538a2ecde26" style="display: block;" data-xd-wired="carousel">
+            <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 5396px;"><div class="g-group slick-slide slick-active" index="0" style="width: 1349px; position: relative; left: 0px; top: 0px; z-index: 900; opacity: 1;">
+                <div class="g-cell g-cell-12-12 carousel-image-container">
+                    <div class="hero-image" style="background-image: url('https://cdn.evbstatic.com/s3-build/perm_001/35d88f/django/images/home/banners/homepage_hero_banner_1.jpg');"></div>
+                </div>
+            </div><div class="g-group slick-slide" index="1" style="width: 1349px; position: relative; left: -1349px; top: 0px; z-index: 800; opacity: 0;">
+                <div class="g-cell g-cell-12-12 carousel-image-container">
+                    <div class="hero-image" style="background-image: url('https://cdn.evbstatic.com/s3-build/perm_001/aa36c3/django/images/home/banners/homepage_hero_banner_2.jpg');"></div>
+                </div>
+            </div><div class="g-group slick-slide" index="2" style="width: 1349px; position: relative; left: -2698px; top: 0px; z-index: 800; opacity: 0;">
+                <div class="g-cell g-cell-12-12 carousel-image-container">
+                    <div class="hero-image" style="background-image: url('https://cdn.evbstatic.com/s3-build/perm_001/6812b9/django/images/home/banners/homepage_hero_banner_3.jpg');"></div>
+                </div>
+            </div><div class="g-group slick-slide" index="3" style="width: 1349px; position: relative; left: -4047px; top: 0px; z-index: 800; opacity: 0;">
+                <div class="g-cell g-cell-12-12 carousel-image-container">
+                    <div class="hero-image" style="background-image: url('https://cdn.evbstatic.com/s3-build/perm_001/99ca9f/django/images/home/banners/homepage_hero_banner_4.jpg');"></div>
+                </div>
+            </div></div></div>
+
+
+
+        </div>
+        <div class="hero-image__content l-mar-top-1"></div><!--hero-image__content-->
+    </section>
+
+    <div class="g-grid">
+        <div class="g-cell g-cell-12-12 g-cell--has-overflow">
+            <div class="l-align-center homepage-search-card l-md-pad-vert-5 l-lg-pad-vert-5 card card--elevated-3">
+                <h1 class="hide-small-accessible text-heading-epic homepage-header l-mar-top-2">
+                    Meet likeminded people, Share great times.                </h1>
+                <div class="js-search-bar search-bar-container l-pad-vert-2 l-pad-bot-3 g-group">
+                    <form action="/d/" method="GET" class="consumer-search-bar l-mar-top-4 responsive-form org-consumer-search-input">
+                        <div class="g-cell--has-overflow search-bar-component">
+                            <div class="autocomplete-component">
+                                <label class="is-hidden-accessible" for="consumer-header-event-search">
+                                    Search events or categories
+                                </label>
+                                <input id="consumer-header-event-search" name="q" type="text" class="js-query-input ui-autocomplete-input" placeholder="Search events or categories" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" title="Search events or categories" aria-autocomplete="list" role="textbox" aria-haspopup="true">
+                                <ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox"  style="z-index: 1; display: none;"></ul></div>
+                        </div>
+                        <div class="show-large g-cell--has-overflow autocomplete-component search-bar-component">
+                            <label class="is-hidden-accessible" for="consumer-header-event-location">Enter city or location</label>
+                            <input id="consumer-header-event-location" name="loc" type="text" class="js-location-input" placeholder="City or location" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" value="Giza, Egypt" title="Enter city or location">
+                        </div>
+                        <div class="hide-small g-cell--no-gutters search-dropdown search-bar-component">
+                            <label class="is-hidden-accessible" for="consumer-header-date-range">Select a date range</label>
+                            <div class="responsive-form__select custom-select-container clrfix"><span class="custom-select-value">All Dates</span>
+                                <div class="custom-select-arrow"></div>
+                                <select id="consumer-header-date-range" name="date" class="js-d-select-box" role="listbox" dorsal-guid="2bad2715-1005-23b3-aff2-08afdc3f8799" data-xd-wired="select-box">
+                                    <option value="" selected="selected">All Dates</option>
+                                    <option value="today">Today</option>
+                                    <option value="tomorrow">Tomorrow</option>
+                                    <option value="this_week">This Week</option>
+                                    <option value="this_weekend">This Weekend</option>
+                                    <option value="next_week">Next Week</option>
+                                    <option value="next_month">Next Month</option>
+                                </select></div>
+                        </div>
+                        <div class="search-bar-component">
+                            <input type="submit" class="js-home-search-btn btn btn--brite btn--block hide-small js-xd-janus-checkpoint-link" value="Search" data-checkpoint-name="homepage_search_submitted">
+                            <input type="submit" class="js-home-search-btn btn btn--brite btn--block show-small js-xd-janus-checkpoint-link" value="" alt="Search" data-checkpoint-name="homepage_search_submitted" aria-label="Search">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <section class="l-pad-bot-5 l-sm-pad-bot-3">
+
+            <div class="js-search-bar">
+                <div class="g-group--full-width l-pad-vert-1 consumer-location">
+                    <div class="g-cell g-cell-1-1 g-cell--has-overflow responsive-form responsive-form--inline l-align-center l-pad-vert-3 l-sm-pad-vert-1 l-mar-top-4 l-sm-mar-top-2">
+                        <h3 class="section-header l-align-left" aria-label="Popular Events in  Giza, Egypt">
+                            <span data-automation="home-popular-events-header" aria-hidden="true">Popular Events nearby </span>
+
+                            <span class="is-hidden-accessible">Popular Events in  Giza, Egypt. Click to change location</span>
+                        </h3>
+                        <div class="autocomplete-component l-align-left popular-autocomplete">
+                            <label class="is-hidden-accessible" for="consumer-location-input-edit">Change location</label>
+                            <input id="consumer-location-input-edit" name="loc" type="text" class="js-consumer-location-input" placeholder="Enter city or location" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" value="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="js-popular-events">
+                <section class="js-events-list">
+
+
+
+                    <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-2 g-cell-lg-1-3 l-pad-vert-3 ">
+
+                        <div class="poster-card js-d-poster" data-share-url="https://www.eventbrite.com/e/megacities-and-development-megamachines-of-hope-and-alienation-tickets-44845318555?aff=ehomecard" data-share-name="MEGACITIES AND DEVELOPMENT: Megamachines of Hope and Alienation" dorsal-guid="270f7ad0-e77b-ab07-d01c-f795be669d6c" data-xd-wired="poster">
+                            <a href="https://www.eventbrite.com/e/megacities-and-development-megamachines-of-hope-and-alienation-tickets-44845318555?aff=ehomecard" class="
+            poster-card__main
+            js-event-link
+
+        " data-type="popular" data-source="home:popular" data-rank="0" data-eid="44845318555" data-automation="event-card">
+                                <div class="poster-card__header">
+                                    <div class="poster-card__image" style="background-color:#627a83;">
+                                        <img class="js-poster-image " src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F43115132%2F101274897307%2F1%2Foriginal.jpg?h=230&amp;w=460&amp;auto=compress&amp;rect=0%2C14%2C750%2C375&amp;s=eebbdf70b2a3b6cd0e327d8b36a38031" alt="MEGACITIES AND DEVELOPMENT: Megamachines of Hope and Alienation tickets">
+                                    </div>
+
+
+
+                                    <span class="poster-card__label">Free</span>
+
+                                </div>
+                                <div class="poster-card__body">
+                                    <time class="poster-card__date">
+
+
+
+                                        Tue, Jun 26
+                                        10:00 AM
+
+
+
+
+
+                                    </time>
+                                    <div class="poster-card__title">
+                                        MEGACITIES AND DEVELOPMENT: Megamachines of Hope and Alienation
+                                    </div>
+                                    <div class="poster-card__venue">
+
+                                        Cairo, Cairo
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="poster-card__footer">
+
+
+                                <div class="poster-card__tags">
+
+
+
+
+
+                                    <a class="event-format" href="/d/egypt--cairo/conferences/" aria-label="${ mark_safe(_('Find {name} events').format(name=format.short_name)) }">#Conference</a>
+
+
+
+
+                                </div>
+                                <div class="poster-card__actions">
+                                    <a class="js-share-event-card share-action" href="#" data-eid="44845318555" title="Share" aria-haspopup="true">
+                                        <i class="ico-share ico--medium"></i>
+                                        <span class="is-hidden-accessible">Share this event</span>
+                                    </a>
+                                    <a class="js-d-bookmark" data-eid="44845318555" data-bookmarked="false" title="Save" data-source-page="home:popular" href="#" aria-label="Save Event" dorsal-guid="67da560e-005b-300e-53b3-cef9d723a995" data-xd-wired="bookmark">
+                                        <i class="ico-bookmark ico--medium"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-2 g-cell-lg-1-3 l-pad-vert-3 ">
+
+                        <div class="poster-card js-d-poster" data-share-url="https://www.eventbrite.com/e/demo-africa-innovation-tour-cairo-edition-tickets-46558396417?aff=ehomecard" data-share-name="DEMO Africa Innovation Tour - Cairo Edition" dorsal-guid="424ce1a8-66f6-8d0a-1de3-0480004d2d39" data-xd-wired="poster">
+                            <a href="https://www.eventbrite.com/e/demo-africa-innovation-tour-cairo-edition-tickets-46558396417?aff=ehomecard" class="
+            poster-card__main
+            js-event-link
+
+        " data-type="popular" data-source="home:popular" data-rank="1" data-eid="46558396417" data-automation="event-card">
+                                <div class="poster-card__header">
+                                    <div class="poster-card__image" style="background-color:#c19f88;">
+                                        <img class="js-poster-image " src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F45480315%2F253296571747%2F1%2Foriginal.jpg?h=230&amp;w=460&amp;auto=compress&amp;rect=0%2C94%2C5184%2C2592&amp;s=25aca1133db99edd6ff421b809fa6ca6" alt="DEMO Africa Innovation Tour - Cairo Edition tickets">
+                                    </div>
+
+
+
+                                    <span class="poster-card__label">Free</span>
+
+                                </div>
+                                <div class="poster-card__body">
+                                    <time class="poster-card__date">
+
+
+
+                                        Wed, Jul 11
+                                        1:30 PM
+
+
+
+
+
+                                    </time>
+                                    <div class="poster-card__title">
+                                        DEMO Africa Innovation Tour - Cairo Edition
+                                    </div>
+                                    <div class="poster-card__venue">
+
+                                        Flat6Labs, Oula
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="poster-card__footer">
+
+
+                                <div class="poster-card__tags">
+
+
+                                    <a class="event-category" href="/d/egypt--oula/business--events/" aria-label="${ mark_safe(_('Find {name} events').format(name=category.short_name)) }">#Business</a>
+
+
+
+
+                                    <a class="event-format" href="/d/egypt--oula/networking/" aria-label="${ mark_safe(_('Find {name} events').format(name=format.short_name)) }">#Networking</a>
+
+
+
+
+                                </div>
+                                <div class="poster-card__actions">
+                                    <a class="js-share-event-card share-action" href="#" data-eid="46558396417" title="Share" aria-haspopup="true">
+                                        <i class="ico-share ico--medium"></i>
+                                        <span class="is-hidden-accessible">Share this event</span>
+                                    </a>
+                                    <a class="js-d-bookmark" data-eid="46558396417" data-bookmarked="false" title="Save" data-source-page="home:popular" href="#" aria-label="Save Event" dorsal-guid="ccd23997-f392-3680-d955-ce22afedc470" data-xd-wired="bookmark">
+                                        <i class="ico-bookmark ico--medium"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="g-cell g-cell--has-overflow g-cell-1-1 g-cell-md-1-2 g-cell-lg-1-3 l-pad-vert-3 ">
+
+                        <div class="poster-card js-d-poster" data-share-url="https://www.eventbrite.com/e/arab-security-conference-2018-tickets-45551065463?aff=ehomecard" data-share-name="Arab Security Conference 2018" dorsal-guid="21dd106f-9a13-7a1f-c39a-ca8df58a8e0f" data-xd-wired="poster">
+                            <a href="https://www.eventbrite.com/e/arab-security-conference-2018-tickets-45551065463?aff=ehomecard" class="
+            poster-card__main
+            js-event-link
+
+        " data-type="popular" data-source="home:popular" data-rank="2" data-eid="45551065463" data-automation="event-card">
+                                <div class="poster-card__header">
+                                    <div class="poster-card__image" style="background-color:#fffffd;">
+                                        <img class="js-poster-image " src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F44075484%2F217350510431%2F1%2Foriginal.jpg?h=230&amp;w=460&amp;auto=compress&amp;rect=0%2C0%2C2160%2C1080&amp;s=fb5cde9bed5f8c02353af642a1bb059a" alt="Arab Security Conference 2018 tickets">
+                                    </div>
+
+
+
+                                    <span class="poster-card__label">$17.37 - $616.99</span>
+
+                                </div>
+                                <div class="poster-card__body">
+                                    <time class="poster-card__date">
+
+
+
+                                        Sun, Sep 23
+                                        9:00 AM
+
+
+
+
+
+                                    </time>
+                                    <div class="poster-card__title">
+                                        Arab Security Conference 2018
+                                    </div>
+                                    <div class="poster-card__venue">
+
+                                        The Nile Ritz-Carlton, Cairo
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="poster-card__footer">
+
+
+                                <div class="poster-card__tags">
+
+
+                                    <a class="event-category" href="/d/egypt--cairo/science-and-tech--events/" aria-label="${ mark_safe(_('Find {name} events').format(name=category.short_name)) }">#ScienceTech</a>
+
+
+
+
+                                    <a class="event-format" href="/d/egypt--cairo/conferences/" aria-label="${ mark_safe(_('Find {name} events').format(name=format.short_name)) }">#Conference</a>
+
+
+
+
+                                </div>
+                                <div class="poster-card__actions">
+                                    <a class="js-share-event-card share-action" href="#" data-eid="45551065463" title="Share" aria-haspopup="true">
+                                        <i class="ico-share ico--medium"></i>
+                                        <span class="is-hidden-accessible">Share this event</span>
+                                    </a>
+                                    <a class="js-d-bookmark" data-eid="45551065463" data-bookmarked="false" title="Save" data-source-page="home:popular" href="#" aria-label="Save Event" dorsal-guid="e450d477-8f12-f498-f4f2-ffb3191cad7f" data-xd-wired="bookmark">
+                                        <i class="ico-bookmark ico--medium"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </section>
+
+
+                <div class="g-cell g-cell-1-1 text--centered js-see-more-events-btn">
+                    <a href="/d/?page=2" class="js-search-click-action js-d-track-link btn btn--secondary" data-source="homePage:moreResultsLink" data-event-action="SeeMore" data-event-category="home" aria-label="See More events in  Giza, Egypt" dorsal-guid="7f190edf-e9dd-8939-6c8f-d61489500562" data-xd-wired="track-link">
+                        See More
+                    </a>
+                </div>
+
+            </div>
+
+
+       <div class="g-group l-pad-bot-3">
+                <div class="g-cell g-cell-1-1 l-mar-top-4 l-align-center">
+                    <h3 class="section-header l-pad-vert-3 l-mar-top-4">
+                        Browse by Top Categories
+                    </h3>
+                </div>
+
+        <div class="g-cell g-cell-1-1 g-cell-md-2-2 g-cell-lg-2-3 l-pad-vert-3 l-md-pad-vert-2 lsm-pad-vert-1 ">
+          <a class="category-card js-category-link js-d-track-link category-music js-xd-janus-checkpoint-link" href="#">
+                        <div class="category-card__wrapper">
+                            <div class="category-card__tint">
+                                <div class="category-card__image"></div>
+                            </div>
+                            <div class="category-card__text-wrapper">
+                                <h4 class="category-card__label l-pad-hor-2 text-large text-body--significant text-heading--emphasized" aria-label="Music.">
+                                    Music
+                                </h4>
+                                <p class="category-card__desc l-mar-top-2 l-pad-hor-2 text-body text-heading--emphasized">
+                                    Intimate house concerts, major music festivals, and the occasional dance party
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+           <div class="g-cell g-cell-1-1 g-cell-md-1-2 g-cell-lg-1-3 l-pad-vert-3 l-md-pad-vert-2 lsm-pad-vert-1 ">
+            <a class="category-card js-category-link js-d-track-link category-food js-xd-janus-checkpoint-link" href="#">
+                        <div class="category-card__wrapper">
+                            <div class="category-card__tint">
+                                <div class="category-card__image"></div>
+                            </div>
+                            <div class="category-card__text-wrapper">
+                                <h4 class="category-card__label l-pad-hor-2 text-large text-body--significant text-heading--emphasized" aria-label="Food &amp; Drink.">
+                                    Food &amp; Drink
+                                </h4>
+                                <p class="category-card__desc l-mar-top-2 l-pad-hor-2 text-body text-heading--emphasized">
+                                    Dinner parties, tastings, and big-time festivals
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="g-cell g-cell-1-1 g-cell-md-1-2 g-cell-lg-1-3 l-pad-vert-3 l-md-pad-vert-2 lsm-pad-vert-1 ">
+                    <a class="category-card js-category-link js-d-track-link category-classes js-xd-janus-checkpoint-link" href="#">
+                        <div class="category-card__wrapper">
+                            <div class="category-card__tint">
+                                <div class="category-card__image"></div>
+                            </div>
+                            <div class="category-card__text-wrapper">
+                                <h4 class="category-card__label l-pad-hor-2 text-large text-body--significant text-heading--emphasized" aria-label="Classes.">
+                                    Classes
+                                </h4>
+                                <p class="category-card__desc l-mar-top-2 l-pad-hor-2 text-body text-heading--emphasized">
+                                    Enlightening seminars, technical workshops, and fitness classes
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="g-cell g-cell-1-1 g-cell-md-1-2 g-cell-lg-1-3 l-pad-vert-3 l-md-pad-vert-2 lsm-pad-vert-1 ">
+                    <a class="category-card js-category-link js-d-track-link category-arts js-xd-janus-checkpoint-link" href="#">
+                        <div class="category-card__wrapper">
+                            <div class="category-card__tint">
+                                <div class="category-card__image"></div>
+                            </div>
+                            <div class="category-card__text-wrapper">
+                                <h4 class="category-card__label l-pad-hor-2 text-large text-body--significant text-heading--emphasized" aria-label="Arts.">
+                                    Arts
+                                </h4>
+                                <p class="category-card__desc l-mar-top-2 l-pad-hor-2 text-body text-heading--emphasized">
+                                    Plays, comedy nights, art exhibitions and film festivals
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="g-cell g-cell-1-1 g-cell-md-1-2 g-cell-lg-1-3 l-pad-vert-3 l-md-pad-vert-2 lsm-pad-vert-1 ">
+                    <a class="category-card js-category-link js-d-track-link category-parties js-xd-janus-checkpoint-link" href="#">
+                        <div class="category-card__wrapper">
+                            <div class="category-card__tint">
+                                <div class="category-card__image"></div>
+                            </div>
+                            <div class="category-card__text-wrapper">
+                                <h4 class="category-card__label l-pad-hor-2 text-large text-body--significant text-heading--emphasized" aria-label="Parties.">
+                                    Parties
+                                </h4>
+                                <p class="category-card__desc l-mar-top-2 l-pad-hor-2 text-body text-heading--emphasized">
+                                    Casual happy hours, singles nights, and all-night celebrations
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="g-cell g-cell-1-1 g-cell-md-1-2 g-cell-lg-1-3 l-pad-vert-3 l-md-pad-vert-2 lsm-pad-vert-1 hide-medium hide-small">
+                    <a class="category-card js-category-link js-d-track-link category-sports js-xd-janus-checkpoint-link" href="#">
+                        <div class="category-card__wrapper">
+                            <div class="category-card__tint">
+                                <div class="category-card__image"></div>
+                            </div>
+                            <div class="category-card__text-wrapper">
+                                <h4 class="category-card__label l-pad-hor-2 text-large text-body--significant text-heading--emphasized" aria-label="Sports &amp; Wellness.">
+                                    Sports &amp; Wellness
+                                </h4>
+                                <p class="category-card__desc l-mar-top-2 l-pad-hor-2 text-body text-heading--emphasized">
+                                    Obstacle races, drop-in yoga classes, and the big game
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="g-cell g-cell-1-1 g-cell-md-2-2 g-cell-lg-2-3 l-pad-vert-3 l-md-pad-vert-2 lsm-pad-vert-1 ">
+                    <a class="category-card js-category-link js-d-track-link category-networking js-xd-janus-checkpoint-link" href="#">
+                        <div class="category-card__wrapper">
+                            <div class="category-card__tint">
+                                <div class="category-card__image"></div>
+                            </div>
+                            <div class="category-card__text-wrapper">
+                                <h4 class="category-card__label l-pad-hor-2 text-large text-body--significant text-heading--emphasized" aria-label="Networking.">
+                                    Networking
+                                </h4>
+                                <p class="category-card__desc l-mar-top-2 l-pad-hor-2 text-body text-heading--emphasized">
+                                    Business mixers, hobby meetups, and panel discussions
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="g-group l-pad-bot-3 communities">
+
+
+                <div class="g-cell g-cell-1-1 g-cell-md-1-2 g-cell-lg-1-3 l-pad-vert-3 l-md-pad-vert-2 lsm-pad-vert-1 hide-medium hide-small">
+                    <h2 style="font-size: 30px;font-family: inherit;font-weight: 500;line-height: 1.1;color: inherit;">Explore Communities</h2>
+                    <p class="lead" style="margin-bottom: 20px;margin-top: 5px;font-weight: 300;line-height: 1.4;">With over 140 communities, there's something for everyone!</p>
+                    <a href="/farornear/com.html"  style="padding: 10px 16px;font-size:18px;line-height: 1.33;border-radius: 6px;background-color: #B73A08;color:#FFFFFF;">Discover</a>
+                </div>
+
+
+                <div class="g-cell g-cell-1-1 g-cell-md-2-2 g-cell-lg-2-3 l-pad-vert-3 l-md-pad-vert-2 lsm-pad-vert-1 ">
+                    <a class="category-card js-category-link js-d-track-link community js-xd-janus-checkpoint-link" href="#">
+                        <div class="category-card__wrapper">
+                            <div class="category-card__tint">
+                                <div class="category-card__image"></div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+
+
+
+            <!--<section>-->
+                <!--<div class="g-group text&#45;&#45;centered show-large communities">-->
+                    <!--<div class="g-cell g-cell-12-12">-->
+                        <!--<div class=""></div>-->
+                    <!--</div>-->
+                    <!--<div class="g-group l-pad-vert-5 l-sm-pad-vert-3">-->
+                        <!--<div class="g-cell g-cell-4-12">-->
+                            <!--<p class="footer-copyright text-body-medium " style="color: black">-->
+                                <!--Explore Communities with over 140 communities, there is something for everyone!-->
+                            <!--</p><br>-->
+                            <!--<button class="btn btn-large " style="background: orange"><a href="#" style="color: black">Discover</a></button>-->
+                        <!--</div>-->
+                        <!--<div class="g-cell g-cell-4-12 ">-->
+                            <!--<div class="category-card__image"></div>-->
+                            <!--<img src="images" class="img-responsive cover">-->
+                        <!--</div>-->
+
+                    <!--</div>-->
+
+                <!--</div>-->
+            <!--</section>-->
+
+            </div>
+
+
+
+        </section>
+    </div>
+
+
+    <section>
+        <div class="g-cell g-cell-1-1 l-mar-top-4 l-align-center">
+            <h3 class="section-header l-pad-vert-3 l-mar-top-4">
+               How It Work
+            </h3>
+        </div>
+        <div class="g-group text--centered show-large">
+            <div class="g-cell g-cell-12-12">
+                <div class=""></div>
+            </div>
+            <div class="g-group l-pad-vert-5 l-sm-pad-vert-3">
+                <div class="g-cell g-cell-4-12">
+                    <i class="fas fa-search fa-3x pull-left" aria-hidden="true"> Find Event</i> <br><br>
+                    <p class="footer-copyright text-body-medium " style="color: black">
+                        Find Event
+                        Discover local Events For all the things you love
+                    </p><br>
+                    <button class="btn btn-large " style="background: orange"><a href="signup.html" style="color: black">sign Up</a></button>
+                </div>
+                <div class="g-cell g-cell-4-8">
+                    <i class="fas fa-plus fa-3x pull-left" aria-hidden="true"> Create Event</i> <br><br>
+                    <p class="footer-copyright text-body-medium " style="color: black">
+                       Create Your own meetup, and draw from a commnuity of millions.
+                    </p><br>
+                    <button class="btn btn-large " style="background: orange"><a href="createevent.html" style="color: black">Create Event</a></button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+        </div>
+
+
+<div class="global-footer">
+    <div class="g-grid l-mar-top-2">
+
+
+        <!-- end g-group -->
+
+        <div class="g-group text--centered show-large">
+
+            <div class="g-group l-pad-vert-5 l-sm-pad-vert-3">
+                <div class="g-cell g-cell-8-12">
+                    <p class="footer-copyright text-body-medium">© 2018 Eventbrite</p>
+                </div>
+                <div class="g-cell g-cell-4-6">
+                    <ul class="social footer-copyright ">
+
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-facebook-square" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-youtube" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div> <!-- end g-grid -->
+
+</div>
+</div>
+<!--<script src="js/require_base_config.js"></script>-->
+<!--<script src="js/script.js"></script>-->
+</body>
+</html>
